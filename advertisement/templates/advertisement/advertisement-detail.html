@@ -1,0 +1,65 @@
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{detail_list.title}}</title>
+    <link rel="stylesheet" href="{% static 'css/style-index.css' %}" type="text/css">
+</head>
+<body>
+<section class="advertisement">
+    <div class="container">
+        <div class="advertisement__descr-block">
+            <h1 class="advertisement__heading">{{detail_list.title}}</h1>
+            <p class="advertisement__descriptions">
+                <span class="heading_span">
+                Описание:
+                </span>
+                {{detail_list.descriptions}}
+            </p>
+            <p class="advertisement__descriptions">
+                <span class="heading_span">
+                Цена:
+                </span>
+                {{detail_list.price}} руб.
+            </p>
+            <p class="advertisement__descriptions">
+                <span class="heading_span">
+                Статус объявления:
+                </span>
+                {{detail_list.status}}
+            </p>
+            <p class="advertisement__descriptions">
+                <span class="heading_span">
+                Тип объявления:
+                </span>
+                {{detail_list.type}}
+            </p>
+            <p class="advertisement__descriptions">
+                <span class="heading_span">
+                Телефон:
+                </span>
+                <a href="tel:+78886667733" class="advertisement__link link">{{detail_list.phone}}</a>
+            </p>
+            <p class="advertisement__descriptions">
+                <span class="heading_span">
+                E-mail:
+                </span>
+                <a href="mailto:{{detail_list.email}}" class="advertisement__link link">{{detail_list.email}}</a>
+            </p>
+            <p class="advertisement__descriptions">
+                <span class="heading_span">
+                Дата создания:
+                </span>
+                {{detail_list.created_at}}
+            </p>
+            <p class="advertisement__descriptions">
+                <span class="heading_span">
+                Просмотры:
+                </span>
+                {{detail_list.count_views}}
+            </p>
+        </div>
+    </div>
+</section>
+</body>
+</html>

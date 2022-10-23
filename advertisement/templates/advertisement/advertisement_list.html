@@ -1,0 +1,41 @@
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Объявления</title>
+    <link rel="stylesheet" href="{% static 'css/style-index.css' %}" type="text/css">
+</head>
+<body>
+    <section class="advertisement">
+        <div class="container">
+            <h1 class="heading">Объявления</h1>
+            {% if advertisement_list %}
+            <ul class="advertisement__list list">
+                {% for my_list in advertisement_list %}
+                    <li class="advertisement__list-item">
+                        <div class="advertisement__author">
+                            <a class="advertisement__list-link link" href="/advertisements/{{my_list.id}}">
+                                {{my_list.title}}
+                            </a>
+                            <p class="advertisement__price">{{my_list.price}} руб.</p>
+                            <p class="advertisement__type">Рубрика:<span class="advertisement__span">
+                                {{my_list.type}}
+                            </span>
+                            </p>
+                            <p class="advertisement__author-item">Опубликовал:<span class="advertisement__span">
+                                {{my_list.author}}
+                            </span>
+                            </p>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <div class="container">
+                <p class="advertisement__descr">Объявлений нет</p>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+</body>
+</html>
