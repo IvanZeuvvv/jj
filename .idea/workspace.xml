@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082a61d7-20d6-4013-8716-800b0aaffd31" name="Changes" comment="My">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advertisement/modelsj.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advertisement/modelsjjjj.py.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/advertisement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/advertisement/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advertisement/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/advertisement/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +54,7 @@
       <updated>1666523413890</updated>
       <workItem from="1666523415244" duration="174000" />
       <workItem from="1666523792428" duration="306000" />
-      <workItem from="1666519607704" duration="3481000" />
+      <workItem from="1666519607704" duration="6940000" />
     </task>
     <task id="LOCAL-00001" summary="My">
       <created>1666523942558</created>
